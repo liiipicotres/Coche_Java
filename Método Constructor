@@ -1,0 +1,61 @@
+package Coche;
+
+public class Coche {
+
+	private int ruedas;
+	private int largo;
+	private int ancho;
+	private int peso_plataforma;
+	private int motor;
+	private int peso_coche;
+	private	String color;
+	private	boolean asientos_cuero, climatizador;
+	
+
+public Coche() {
+	
+	ruedas=4;
+	largo=500;
+	ancho=200;
+	peso_plataforma=500;
+	motor=250;
+		
+	
+}
+
+	public String decir_datos_generales() {//Método Getter
+		
+		return "La plataforma del vehículo tiene "+ruedas+" ruedas. Mide "+largo/100+" metros de largo y "+ancho/100+" metros de ancho. "
+				+ "La plataforma pesa "+peso_plataforma+"kg y el motor pesa "+motor+"kg.";
+	}
+	
+	public void establecer_color(String color_coche) { //Método Setter. "void" sirve para indicar que no va a devolver ningún dato, a diferencia del getter.
+		color=color_coche;
+	}
+	
+	public String devolver_color() {
+		return "El color del coche es "+ color;
+		
+	}
+
+	public void cuero_o_no(String asientos_de_cuero) {
+		
+		if(asientos_de_cuero=="si") {
+			asientos_cuero=true;
+		}else {
+			asientos_cuero=false;
+		}
+	
+	}
+	
+	public String dime_asientos() {
+		
+		if(asientos_cuero==true) {
+			return "Los asientos son de cuero";
+	}else {
+			return "Los asientos no son de cuero";
+		}
+}
+	
+	
+}
