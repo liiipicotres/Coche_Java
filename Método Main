@@ -1,0 +1,23 @@
+package Coche;
+
+public class Uso_Coche {
+
+	public static void main(String[] args) {
+		
+		Coche Audi=new Coche();
+	
+
+		System.out.println(Audi.decir_datos_generales());
+		
+		
+		Audi.establecer_color("amarillo");
+		
+		System.out.println(Audi.devolver_color());
+		
+		
+		Audi.cuero_o_no("si");
+		
+		System.out.println(Audi.dime_asientos());
+	}
+
+}
